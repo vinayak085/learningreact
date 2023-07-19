@@ -1,10 +1,15 @@
 import React from "react"
+import { Card, CardBody } from "reactstrap";
 
-function Header({name,title})
+function Header({ name,title })
 {
     return(
       <div>
-        <h1>welcome to my website</h1>
+        <Card className="my-2 bg-warning">
+          <CardBody>
+        <h1 className="text-center my-2">welcome to my website</h1>
+        </CardBody>
+        </Card>
       </div>
     );
 }

@@ -1,15 +1,17 @@
-import React from "react";
-import { Jumbotron } from "reactstrap";
-import { Button, ButtonDropdown, ButtonGroup, ButtonToggle, ButtonToolbar }from 'reactstrap';
+import React, { useEffect } from "react";
+
 const Home = (props) => {
+  useEffect(() =>{
+     document.title = "Home || Hello Brothers";
+  }, []);
   return (
     <div>
-      <Jumbotron>
+
         <h1>Hello its me Brother</h1>
         <p> this is for learnimg purpose to 
            create frontend and also
            a backend for the beginner</p>
-      </Jumbotron>
+    
     </div>   
   );
 };
